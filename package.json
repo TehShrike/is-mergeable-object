@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/TehShrike/is-mergeable-object/issues"
   },
-  "homepage": "https://github.com/TehShrike/is-mergeable-object#readme"
+  "homepage": "https://github.com/TehShrike/is-mergeable-object#readme",
+  "devDependencies": {
+    "jsmd": "0.3.1"
+  }
 }
