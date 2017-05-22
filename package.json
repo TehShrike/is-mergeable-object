@@ -1,0 +1,26 @@
+{
+  "name": "is-mergeable-object",
+  "version": "1.0.0",
+  "description": "Check whether or not a value is an object that makes sense to iterate over",
+  "main": "index.js",
+  "scripts": {
+    "test": "jsmd readme.md"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/TehShrike/is-mergeable-object.git"
+  },
+  "keywords": [
+    "object",
+    "iterate",
+    "recursive",
+    "merge",
+    "deep"
+  ],
+  "author": "TehShrike",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/TehShrike/is-mergeable-object/issues"
+  },
+  "homepage": "https://github.com/TehShrike/is-mergeable-object#readme"
+}
