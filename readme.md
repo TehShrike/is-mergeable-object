@@ -4,7 +4,7 @@
 const isMergeableObject = require('./')
 -->
 
-The biggest difficulty that recursive merge libraries run into is figuring out which properties should be recursively merge.
+The biggest difficulty deep merge libraries run into is figuring out which properties of an object should be recursively iterated over.
 
 This module contains the algorithm used by [`deepmerge`](https://github.com/KyleAMathews/deepmerge/).
 
