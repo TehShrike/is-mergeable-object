@@ -18,7 +18,7 @@
     "deep"
   ],
   "author": "TehShrike",
-  "license": "WTFPL",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/TehShrike/is-mergeable-object/issues"
   },

@@ -21,7 +21,3 @@ isMergeableObject(new Object()) // => true
 
 isMergeableObject(new Date()) // => false
 ```
-
-# License
-
-[WTFPL](http://wtfpl2.com)
