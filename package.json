@@ -1,6 +1,6 @@
 {
   "name": "is-mergeable-object",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Check whether or not a value is an object that makes sense to iterate over",
   "main": "index.js",
   "scripts": {
