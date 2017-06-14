@@ -1,11 +1,14 @@
-function toString(object) {
-	return Object.prototype.toString.call(object)
+module.exports = function isMergeableObject(value) {
+	return isNonNullObject(value) && isNotSpecial(value)
 }
 
-module.exports = function isMergeableObject(val) {
-	var nonNullObject = !!val && typeof val === 'object'
+function isNonNullObject(value) {
+	return !!value && typeof value === 'object'
+}
 
-	return nonNullObject
-		&& toString(val) !== '[object RegExp]'
-		&& toString(val) !== '[object Date]'
+function isNotSpecial(value) {
+	var stringValue = Object.prototype.toString.call(value)
+
+	return stringValue !== '[object RegExp]'
+		&& stringValue !== '[object Date]'
 }
