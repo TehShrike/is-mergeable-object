@@ -12,7 +12,8 @@ function isSpecial(value) {
 
 	return stringValue === '[object RegExp]'
 		|| stringValue === '[object Date]'
-		|| isReactElement(value)
+  	|| isReactElement(value)
+  	|| isDomElement(value)
 }
 
 // see https://github.com/facebook/react/blob/b5ac963fb791d1298e7f396236383bc955f916c1/src/isomorphic/classic/element/ReactElement.js#L21-L25
@@ -21,4 +22,10 @@ var REACT_ELEMENT_TYPE = canUseSymbol ? Symbol.for('react.element') : 0xeac7
 
 function isReactElement(value) {
 	return value.$$typeof === REACT_ELEMENT_TYPE
+}
+
+var isBrowser = new Function('try {return this===window;}catch(e){ return false;}')();
+
+function isDomElement(value) {
+	return isBrowser && value instanceof Element
 }
