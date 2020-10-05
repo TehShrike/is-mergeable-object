@@ -6,16 +6,7 @@ function isNonNullObject(value) {
   return !!value && typeof value === 'object';
 }
 function isSpecial(value) {
-  // var stringValue = Object.prototype.toString.call(value)
-
-  // return stringValue === '[object RegExp]'
-  // 	|| stringValue === '[object Date]'
-  // 	|| isReactElement(value)
-
-  // There is a better way to check for RegExp and Date objects .
-  return (
-    value instanceof RegExp || value instanceof Date || isReactElement(value)
-  );
+  return  value instanceof RegExp || value instanceof Date || isReactElement(value)
 }
 
 // see https://github.com/facebook/react/blob/b5ac963fb791d1298e7f396236383bc955f916c1/src/isomorphic/classic/element/ReactElement.js#L21-L25
